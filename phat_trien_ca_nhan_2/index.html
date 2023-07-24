@@ -1,0 +1,202 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css">
+  <!-- Thêm Font Awesome để sử dụng biểu tượng -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body ng-app="myApp">
+
+
+  <div class="grid grid-cols-12">
+    <div class="col-span-1">
+      <aside
+        class="fixed top-0 left-0 z-40 w-32 h-screen transition-transform -translate-x-full bg-white border-r border-gray-200 md:translate-x-0 dark:bg-gray-800 dark:border-gray-700"
+        aria-label="Sidenav" id="drawer-navigation">
+        <div class="flex flex-col items-center overflow-y-auto py-5 px-3 h-full bg-white dark:bg-gray-800">
+          <ul class="h-20">
+            <li>
+              <a href="https://flowbite.com"
+                class="flex items-center justify-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="4" y="4" width="6" height="7" rx="1" stroke="#222222" stroke-linejoin="round" />
+                  <rect x="4" y="15" width="6" height="5" rx="1" stroke="#222222" stroke-linejoin="round" />
+                  <rect x="14" y="4" width="6" height="5" rx="1" stroke="#222222" stroke-linejoin="round" />
+                  <rect x="14" y="13" width="6" height="7" rx="1" stroke="#222222" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="flex-grow flex items-center justify-center">
+            <ul class="space-y-2 grid justify-center items-center">
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center p-2 text-base font-medium text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="12" cy="12" r="8.5" stroke="#222222" />
+                    <path d="M5 2.80385C4.08789 3.33046 3.33046 4.08788 2.80385 5" stroke="#222222"
+                      stroke-linecap="round" />
+                    <path d="M19 2.80385C19.9121 3.33046 20.6695 4.08788 21.1962 5" stroke="#222222"
+                      stroke-linecap="round" />
+                    <path d="M12 6.5V11.75C12 11.8881 12.1119 12 12.25 12H16.5" stroke="#222222"
+                      stroke-linecap="round" />
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="3" y="6" width="18" height="15" rx="2" stroke="#222222" />
+                    <path d="M3 11L21 11" stroke="#222222" stroke-linecap="round" />
+                    <path d="M9 16H15" stroke="#222222" stroke-linecap="round" />
+                    <path d="M8 3L8 7" stroke="#222222" stroke-linecap="round" />
+                    <path d="M16 3L16 7" stroke="#222222" stroke-linecap="round" />
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="4" y="5" width="16" height="5" rx="1" stroke="#222222" stroke-linejoin="round" />
+                    <rect x="4" y="14" width="16" height="5" rx="1" stroke="#222222" stroke-linejoin="round" />
+                  </svg>
+
+                </a>
+              </li>
+              <li>
+                <a href="#"
+                  class="flex items-center justify-center p-2 text-base font-medium text-gray-900 rounded-lg transition duration-75 hover:bg-gray-100 dark:hover:bg-gray-700 dark:text-white group">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.5 5.9C5.5 5.05992 5.5 4.63988 5.66349 4.31901C5.8073 4.03677 6.03677 3.8073 6.31901 3.66349C6.63988 3.5 7.05992 3.5 7.9 3.5H12.5059C12.8728 3.5 13.0562 3.5 13.2288 3.54145C13.3819 3.57819 13.5282 3.6388 13.6624 3.72104C13.8138 3.8138 13.9435 3.94352 14.2029 4.20294L17.7971 7.79706C18.0565 8.05648 18.1862 8.1862 18.279 8.33757C18.3612 8.47178 18.4218 8.6181 18.4586 8.77115C18.5 8.94378 18.5 9.12723 18.5 9.49411V18.1C18.5 18.9401 18.5 19.3601 18.3365 19.681C18.1927 19.9632 17.9632 20.1927 17.681 20.3365C17.3601 20.5 16.9401 20.5 16.1 20.5H7.9C7.05992 20.5 6.63988 20.5 6.31901 20.3365C6.03677 20.1927 5.8073 19.9632 5.66349 19.681C5.5 19.3601 5.5 18.9401 5.5 18.1V5.9Z"
+                      stroke="#222222" />
+                    <path
+                      d="M12.5 3.5V7.1C12.5 7.94008 12.5 8.36012 12.6635 8.68099C12.8073 8.96323 13.0368 9.1927 13.319 9.33651C13.6399 9.5 14.0599 9.5 14.9 9.5H18.5"
+                      stroke="#222222" />
+                  </svg>
+
+
+                </a>
+              </li>
+            </ul>
+          </div>
+          <ul class="h-20 flex items-end">
+            <li>
+              <button type="button"
+                class="flex text-sm rounded-full md:mr-0 focus:ring-4 focus:ring-gray-300 dark:focus:ring-gray-600"
+                id="user-menu-button" aria-expanded="false" data-dropdown-toggle="dropdown">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="12" cy="8" r="3.5" stroke="#222222" stroke-linecap="round" />
+                  <path
+                    d="M4.84913 16.9479C5.48883 14.6034 7.91473 13.5 10.345 13.5H13.655C16.0853 13.5 18.5112 14.6034 19.1509 16.9479C19.282 17.4287 19.3868 17.9489 19.4462 18.5015C19.5052 19.0507 19.0523 19.5 18.5 19.5H5.5C4.94772 19.5 4.49482 19.0507 4.55382 18.5015C4.6132 17.9489 4.71796 17.4287 4.84913 16.9479Z"
+                    stroke="#222222" stroke-linecap="round" />
+                </svg>
+
+              </button>
+            </li>
+          </ul>
+        </div>
+      </aside>
+    </div>
+
+    <div class="col-start-3 col-span-9 ">
+      <div class="px-6 py-3 font-black text-4xl text-gray-900 dark:text-white"
+        style="display: flex; align-items: center;">
+        <div class="me-5 ms-10">
+          <span id="currentMonth"></span> <span id="currentYear"></span>
+        </div>
+        <div class="p-5" style="display: flex;">
+          <svg id="previousMonthBtn" class="me-4 w-6 h-6 text-gray-800 dark:text-white cursor-pointer"
+            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10">
+            <path d="M9.207 1A2 2 0 0 0 6.38 1L.793 6.586A2 2 0 0 0 2.207 10H13.38a2 2 0 0 0 1.414-3.414L9.207 1Z" />
+          </svg>
+          <svg id="nextMonthBtn" class="w-6 h-6 text-gray-800 dark:text-white cursor-pointer" aria-hidden="true"
+            xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 10">
+            <path
+              d="M15.434 1.235A2 2 0 0 0 13.586 0H2.414A2 2 0 0 0 1 3.414L6.586 9a2 2 0 0 0 2.828 0L15 3.414a2 2 0 0 0 .434-2.179Z" />
+          </svg>
+        </div>
+        <div class="me-5 ms-10">
+          <div class="text-xl  grid grid-cols-12" style="font-weight: 100;">
+            <!-- ... -->
+            <!-- Biểu tượng để mở dropdown -->
+            <div class="date-picker relative" id="showDatePickerBtn">
+
+              <i class="fas fa-calendar cursor-pointer "></i>
+              
+              <div class="date-picker-dropdown hidden" id="datePickerDropdown">
+                <h2>Chọn ngày</h2>
+                <!-- Thêm nút Close -->
+                <span class="date-picker-close cursor-pointer absolute top-2 right-2"><i
+                    class="fas fa-times"></i></span>
+                <div class="flex justify-between items-center mb-2">
+                  <!-- <h2 class="text-xl font-bold" id="currentMonthYearText"></h2> -->
+                </div>
+                <div class="flex">
+                  <select id="daySelect" class="flex-1 p-2 border border-gray-400 rounded">
+                    <!-- Đổ dữ liệu ngày vào đây bằng JavaScript -->
+                  </select>
+                  <select id="monthSelect" class="flex-1 p-2 border border-gray-400 rounded">
+                    <!-- Đổ dữ liệu tháng vào đây bằng JavaScript -->
+                  </select>
+                  <select id="yearSelect" class="flex-1 p-2 border border-gray-400 rounded">
+                    <!-- Đổ dữ liệu năm vào đây bằng JavaScript -->
+                  </select>
+                </div>
+                <button id="selectDateBtn"
+                  class="bg-blue-500 text-white px-4 py-2 rounded mt-4 mx-auto block">Xem</button>
+              </div>
+            </div>
+
+            <!-- <div class="selected-date" id="currentMonthYearText"></div> -->
+
+          </div>
+
+        </div>
+      </div>
+
+      <div class="relative overflow-x-auto pt-9">
+        <table class="w-full text-xs text-left text-gray-500 dark:text-gray-400">
+          <thead>
+            <tr class="text-center">
+              <th scope="col" class="px-6 py-3">MON</th>
+              <th scope="col" class="px-6 py-3">TUE</th>
+              <th scope="col" class="px-6 py-3">WED</th>
+              <th scope="col" class="px-6 py-3">THU</th>
+              <th scope="col" class="px-6 py-3">FRI</th>
+              <th scope="col" class="px-6 py-3">SAT</th>
+              <th scope="col" class="px-6 py-3">SUN</th>
+            </tr>
+          </thead>
+          <tbody id="calendarBody"></tbody>
+        </table>
+
+
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.2/angular.min.js"></script>
+  <script src="js/main.js">
+  </script>
+
+
+
+</body>
+
+</html>

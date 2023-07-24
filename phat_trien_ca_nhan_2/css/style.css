@@ -1,0 +1,118 @@
+tbody tr {
+    border-bottom: none !important;
+    text-align: center;
+  }
+
+  .current-month {
+    color: black;
+  }
+
+  .previous-month,
+  .next-month {
+    color: gray;
+  }
+
+  .today a {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: rgb(109, 147, 192);
+    text-align: center;
+    line-height: 32px;
+    color: white;
+  }
+
+  .next-month .today {
+    background-color: initial;
+    color: initial;
+
+  }
+
+  .p-5 {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+    /* Đặt khoảng cách cứng */
+
+
+    #myModal .modal-content {
+      max-width: 300px;
+      /* Chiều rộng của modal */
+    }
+
+    #yearContainer {
+      max-height: 150px;
+      /* Giới hạn chiều cao container */
+      overflow-y: auto;
+      /* Tạo thanh cuộn */
+    }
+
+    #yearList {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    #yearList li {
+      flex: 1 0 25%;
+      /* Căn chỉnh chiều rộng các mục trong 4 cột */
+      margin-bottom: 0.5rem;
+      /* Khoảng cách giữa các mục */
+    }
+  }
+
+
+
+  /* CSS hiện tại của bạn */
+  /* ... */
+  .date-picker {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    padding: 10px;
+  }
+
+  .date-picker-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 300px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+  }
+
+  .date-picker-dropdown {
+    /* ... */
+    padding: 10px;
+  }
+
+  /* Đặt khoảng cách giữa các select */
+  .date-picker-dropdown select {
+    margin-right: 10px;
+    /* Khoảng cách bên phải giữa các select */
+    margin-top: 15px;
+  }
+
+  /* Thêm style cho nút Close */
+  .date-picker-close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    cursor: pointer;
+  }
+
+  /* CSS cho phần hiển thị ngày đã chọn */
+  /* .selected-date {
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    display: inline-block;
+  } */
